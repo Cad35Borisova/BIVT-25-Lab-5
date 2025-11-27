@@ -10,7 +10,24 @@ namespace Lab5
             double average = 0;
 
             // code here
-
+            double srz = 0;
+            double pe = 0;
+            double count = 0;
+            for (int i = 0;i < matrix.GetLenght(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLenght(1); j++)
+                {
+                    if matrix[i, j] > 0{
+                        pe += matrix[i, j];
+                        count += 1;
+                    }
+                }
+            }
+            if (count > 0) 
+            {
+                srz = pe / count;
+            }
+            average = srz;
             // end
 
             return average;
